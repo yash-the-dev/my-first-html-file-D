@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    My First Html File | Yash-d-Dev
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center-wrap">
+        <h1> This is <u>"h1".</u> </h1>
+    </div>
+    <p> Mainly Used for a "Title" </p>
+    <h2> This is "h2". </h2>
+    <p> Mainly used as "Subtitle" </p>
+    <h3> This is "h3". </h3>
+    <p> Mainly Used for "Smaler Headings" </p>
+  
+    
+    <p> This is a paragraph. Wanna see it longer? </p>
+    
+    <p> This is a Longer paragraph in here; As you asked, you want a longer paragraph, Didn't you?</p>
+    
+    <p> This is a paregraph, <br> but with a line break </p>
+    
+    <h3> Let me show you a link </h3>
+    <div class="link-center">
+        <a href="http://igloo.inc" target="_blank"> Go to Mystery Website! (Click me)</a>
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <h2> This Is an <i>Image</i></h2>
+    <div class="gradient-border">
+        <img src="the-dawg.jpg" alt="A good dog">
+    </div>
+    <br>
+
+    <h2><u><i>This is a</i> good Dawg</u> </h2>
+    <br>
+    
+    <h2>These are <i><u>BULLET POINTS</u></i>:</h2>
+    <h3>We have the following fruits:</h3>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Mangoes</li>
+        <li>Oranges (this one wasn't sweet..)</li>
+    </ul>
+    <br>
+    
+    <h2>These are <i>Numerical Points</i><br>useful for <u>periodic table</u> or <u>To Do List</u> ig..</h2>
+    <ol>
+        <li>Hydrogen</li>
+        <li>Helium</li>
+        <li>Lithium</li>
+        <li>Beryllium</li>
+        <li>Boron (Lets stop chemisry)</li>
+    </ol>
+    <br>
+
+    <div>
+        <h2>This is a Block-level <b>Container</b> Used for styling!</h2>
+        <p>In a Block-level container,<br>
+            You can group things easily using the <b>div function</b></p>
+    </div>
+
+    <p>My favorite fruit is <span>mango</span>.</p>
+    <p>Above here, there's a <b>span</b> which is like div but for styling of specific letters/words</p>
+    <br>
+
+    <div>
+        <h2>Div Test</h2>
+        <p>This is inside a div. Right now it looks totally normal —
+        that's expected! My favorite subject is *not* <span>Chemistry</span>.</p>
+    </div>
+
+
+</body>
+</html>
