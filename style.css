@@ -1,81 +1,218 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>
-    My First Html File | Yash-d-Dev
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="center-wrap">
-        <h1> This is <u>"h1".</u> </h1>
-    </div>
-    <p> Mainly Used for a "Title" </p>
-    <h2> This is "h2". </h2>
-    <p> Mainly used as "Subtitle" </p>
-    <h3> This is "h3". </h3>
-    <p> Mainly Used for "Smaler Headings" </p>
-  
-    
-    <p> This is a paragraph. Wanna see it longer? </p>
-    
-    <p> This is a Longer paragraph in here; As you asked, you want a longer paragraph, Didn't you?</p>
-    
-    <p> This is a paregraph, <br> but with a line break </p>
-    
-    <h3> Let me show you a link </h3>
-    <div class="link-center">
-        <a href="http://igloo.inc" target="_blank"> Go to Mystery Website! (Click me)</a>
-    </div>
-    
-    <br>
-    <br>
-    <br>
-    <h2> This Is an <i>Image</i></h2>
-    <div class="gradient-border">
-        <img src="the-dawg.jpg" alt="A good dog">
-    </div>
-    <br>
+body {
+    color: white;
+    background-image: url("https://github.com/yash-the-dev/my-first-html-file-D/blob/main/Site-Background.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-    <h2><u><i>This is a</i> good Dawg</u> </h2>
-    <br>
+.center-wrap {
+  text-align:center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.center-wrap h1 {
+    color: cyan;
+    background: black;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: -10px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: darkorange;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.center-wrap h2 {
+    color:rgb(234, 198, 154);
+    background: black;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: -10px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    color: gold;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 0.8);
+}
+
+.center-wrap h3 {
+    color: rgb(210, 205, 175);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.center-wrap h3,
+.link-center {
+  position: relative;
+  overflow: hidden;
+}
+
+.center-wrap h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.center-wrap h3:hover::after {
+  left: 125%;
+}
+
+.link-center {
+    text-align: center;
+}
+
+a {
+    color: aqua;
+    font-size: 20px;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}
+
+p {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}
+
+
+img {
+    width: 300px;
+    color: red;
+    box-shadow: -6px 6px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-border {
+    display: inline-block;
+    background: linear-gradient(to right, red, orange, yellow);
+    border-radius: 30px;
+    box-shadow: -15px 15px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: crosshair;
+}
+
+.gradient-border img {
+    display: block;
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 5px rgba(255, 215, 100, 1);
+}
+
+.gradient-border,
+.gradient-border img {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gradient-border:hover,
+.gradient-border img:hover {
+    transform: scale(1);
+}
+
+.gradient-border:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.3);
+}
+
+.highlight {
+    color: gold;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.highlight2 {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttons button {
+    color: blanchedalmond;
+}
+
+.my-btn {
+    background-color: #222;
+    color: gold;
+    font-size: 18px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: -6px 6px 1px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, glo
+}
+
+.my-btn:hover {
+    background-color: #444;
+    transform: scale(1.05);
     
-    <h2>These are <i><u>BULLET POINTS</u></i>:</h2>
-    <h3>We have the following fruits:</h3>
-    <ul>
-        <li>Apples</li>
-        <li>Bananas</li>
-        <li>Mangoes</li>
-        <li>Oranges (this one wasn't sweet..)</li>
-    </ul>
-    <br>
-    
-    <h2>These are <i>Numerical Points</i><br>useful for <u>periodic table</u> or <u>To Do List</u> ig..</h2>
-    <ol>
-        <li>Hydrogen</li>
-        <li>Helium</li>
-        <li>Lithium</li>
-        <li>Beryllium</li>
-        <li>Boron (Lets stop chemisry)</li>
-    </ol>
-    <br>
+}
 
-    <div>
-        <h2>This is a Block-level <b>Container</b> Used for styling!</h2>
-        <p>In a Block-level container,<br>
-            You can group things easily using the <b>div function</b></p>
-    </div>
+.apples {
+    color: red;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}
+.bananas {
+    color: yellowgreen;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}
+.mangoes {
+    color: goldenrod;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}
+.oranges {
+    color: orange;
+    text-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
+}
 
-    <p>My favorite fruit is <span>mango</span>.</p>
-    <p>Above here, there's a <b>span</b> which is like div but for styling of specific letters/words</p>
-    <br>
+.rainbow-text {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 
-    <div>
-        <h2>Div Test</h2>
-        <p>This is inside a div. Right now it looks totally normal —
-        that's expected! My favorite subject is *not* <span>Chemistry</span>.</p>
-    </div>
-
-
-</body>
-</html>
+.new-design {
+    background: linear-gradient(to right, red, green, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
